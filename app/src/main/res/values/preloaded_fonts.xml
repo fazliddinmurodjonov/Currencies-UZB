@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/amethysta</item>
+        <item>@font/freckle_face</item>
+        <item>@font/gelasio_medium</item>
+        <item>@font/kadwa</item>
+        <item>@font/salsa</item>
+    </array>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/currency_tv"
+                style="@style/TextViewBold"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Currency : "
+                app:layout_constraintBottom_toTopOf="@id/symbolCode_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/symbolCode_tv"
+                style="@style/TextViewBold"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Symbol code : "
+                app:layout_constraintBottom_toTopOf="@id/numberCode_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/currency_tv" />
+
+            <TextView
+                android:id="@+id/numberCode_tv"
+                style="@style/TextViewBold"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Number code : "
+                app:layout_constraintBottom_toTopOf="@id/change_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/symbolCode_tv" />
+
+            <TextView
+                android:id="@+id/change_tv"
+                style="@style/TextViewBold"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Change : "
+                app:layout_constraintBottom_toTopOf="@id/exchangeRate_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/numberCode_tv" />
+
+            <TextView
+                android:id="@+id/exchangeRate_tv"
+                style="@style/TextViewBold"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Exchange rate : "
+                app:layout_constraintBottom_toTopOf="@id/date_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/change_tv" />
+
+            <TextView
+                android:id="@+id/date_tv"
+                style="@style/TextViewBold"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Date : "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/exchangeRate_tv" />
+
+            <ImageView
+                android:id="@+id/countryFlag"
+                tools:ignore="MissingConstraints"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/usd"
+                app:layout_constraintBottom_toBottomOf="@id/currency"
+                app:layout_constraintEnd_toStartOf="@id/currency"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@id/currency_tv"
+                app:layout_constraintTop_toTopOf="@id/currency" />
+
+            <TextView
+                android:id="@+id/currency"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="1 US Dollar"
+                android:theme="@style/TextViewBold"
+                app:layout_constraintBottom_toTopOf="@id/symbolCode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/symbolCode"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="USD"
+                android:theme="@style/TextViewRegular"
+                app:layout_constraintBottom_toTopOf="@id/numberCode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/currency" />
+
+            <TextView
+                android:id="@+id/numberCode"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="840"
+                android:theme="@style/TextViewRegular"
+                app:layout_constraintBottom_toTopOf="@id/change"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/symbolCode" />
+
+            <TextView
+                android:id="@+id/change"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="241.61"
+                android:theme="@style/TextViewRegular"
+                app:layout_constraintBottom_toTopOf="@id/exchangeRate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/numberCode" />
+
+            <TextView
+                android:id="@+id/exchangeRate"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="11571.99"
+                android:theme="@style/TextViewRegular"
+                app:layout_constraintBottom_toTopOf="@id/date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/change" />
+
+            <TextView
+                android:id="@+id/date"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="21.03.2022"
+                android:theme="@style/TextViewRegular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/exchangeRate" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
