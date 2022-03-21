@@ -2,14 +2,16 @@
 
 <h4>You can find The Сentral Bank of the Republic of Uzbekistan fixed the following rates of the foreign currencies every day by the application.<h4>
 
-<img src="images/video.gif" width = "270" ><img src="images/img_1.jpg" width = "270" > 
-<img src="images/img_2.jpg" width = "270" > <img src="images/img_3.jpg" width = "270" >
+<img src="images/video.gif" width = "300" > <img src="images/img_1.jpg" width = "270"> 
+  
+<img src="images/img_2.jpg" width = "280" > <img src="images/img_3.jpg" width = "280">
   
 
 <h3>I made icons for that app.<h3>
 
 <img src="images/icons.png">
 
+  
   
 Resources:
  
