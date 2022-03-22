@@ -7,7 +7,7 @@
 <img src="images/img_2.jpg" width = "280" > <img src="images/img_3.jpg" width = "280">
   
 
-<h3>I made icons for that app.<h3>
+<h3>I made icons for this app.<h3>
 
 <img src="images/icons.png">
 
