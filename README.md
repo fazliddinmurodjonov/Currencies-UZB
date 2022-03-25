@@ -13,7 +13,7 @@
 
   
   
-Resources:
+# Resources:
  
 <a href = "https://lottiefiles.com/23102-currencies-use-any-background">LottieFiles</a>
 
